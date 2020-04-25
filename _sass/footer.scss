@@ -10,7 +10,7 @@ footer {
     p {
       padding-bottom: 1rem;
     }
-    color: black;
+    color: #141414;
 
     h1 {
 
@@ -31,12 +31,10 @@ footer {
   }
 
   button {
-    color: black;
-    background: unset;
+    color: #141414;
+    background: none;
     border: unset;
     cursor: pointer;
-    &:focus {
-      outline: unset;
-    }
+    outline: unset;
   }
 }
