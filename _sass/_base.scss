@@ -17,6 +17,17 @@ body {
   height: 100%;
 }
 
+#text {
+  position: relative;
+}
+#test2 {
+  display: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
 .logo {
   background-color: rgb(65, 65, 65);
 }
@@ -83,6 +94,9 @@ body {
   color: white;
   background-color: rgb(216, 18, 125);
   margin-bottom: 0;
+  letter-spacing: 2px;
+  padding-bottom: 0.2rem;
+  padding-top: 0.2rem;
 }
 
 .heart {
@@ -90,4 +104,12 @@ body {
   width: 100%;
   height: auto;
   margin-bottom: 1rem;
+}
+
+a {
+  color: black;
+  text-decoration: underline;
+  &:hover {
+    color: black
+  }
 }
