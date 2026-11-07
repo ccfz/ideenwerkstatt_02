@@ -81,56 +81,47 @@ body {
   }
 }
 
-// .picture_row {
-//   display: flex;
-//   flex-direction: row;
-//   flex-wrap: wrap;
-//   width: 100%;
-//   flex-wrap: wrap;
-//   margin-bottom: 1rem;
+.picture-strip {
+  display: flex;
+  flex-wrap: nowrap;
 
-
-//   div {
-//     flex-grow: 1;
-//     height: 10rem;
-//     min-width: 5rem;
-
-//     @include media-breakpoint-down(md) {
-//       height: 10rem;
-//     min-width: 4rem;
-//     }
-//   }
+  @include media-breakpoint-down(sm) {
+    flex-wrap: wrap;
+  }
 
   .bild {
+    flex: 1 0 0%;
+    min-width: 0;
+    height: 14rem;
     background-repeat: no-repeat;
-    background-position: 50% 0%;
+    background-position: center center;
     background-size: cover;
+
+    @include media-breakpoint-down(sm) {
+      flex: 0 0 50%;
+      height: 10rem;
+    }
   }
 
-  #bild_1 {
-    background-image: url('../assets/images/Reh.png');
+  #bild_1 { background-image: url('../assets/images/Reh.png'); }
+  #bild_2 { background-image: url('../assets/images/Hase.png'); }
+  #bild_3 { background-image: url('../assets/images/Becher%20Palme.png'); }
+  #bild_4 { background-image: url('../assets/images/Elefant%20Otti%20Webseite.png'); }
+  #bild_5 { background-image: url('../assets/images/Happy%20Lights.png'); }
+  #bild_6 { background-image: url('../assets/images/Kaktus.png'); }
+  #bild_7 { background-image: url('../assets/images/Kette.png'); }
+  #bild_8 { background-image: url('../assets/images/Vogel.png'); }
+
+  #design_1,
+  #design_2,
+  #design_3,
+  #design_4 {
+    background-color: #e0e0e0;
   }
-  #bild_2 {
-    background-image: url('../assets/images/Hase.png');
-  }
-  #bild_3 {
-    background-image: url('../assets/images/Becher%20Palme.png');
-  }
-  #bild_4 {
-    background-image: url('../assets/images/Elefant%20Otti%20Webseite.png');
-  }
-  #bild_5 {
-    background-image: url('../assets/images/Happy%20Lights.png');
-  }
-  #bild_6 {
-    background-image: url('../assets/images/Kaktus.png');
-  }
-  #bild_7 {
-    background-image: url('../assets/images/Kette.png');
-  }
-  #bild_8 {
-    background-image: url('../assets/images/Vogel.png');
-  }
+}
+
+.logo--design {
+  background-color: #c8dac8;
 }
 
 .content {
