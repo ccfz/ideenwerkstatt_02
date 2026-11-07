@@ -38,8 +38,6 @@ body {
     height: auto;
     max-height: 22rem;
     margin-bottom: 1.5rem;
-    mix-blend-mode: multiply;
-
     @include media-breakpoint-down(sm) {
       max-width: 70%;
       max-height: 16rem;
