@@ -93,7 +93,7 @@ body {
 
     @include media-breakpoint-down(sm) {
       flex: 0 0 50%;
-      height: 10rem;
+      height: 50vw;
     }
   }
 
@@ -105,6 +105,14 @@ body {
   #bild_6 { background-image: url('../assets/images/Kaktus.png'); }
   #bild_7 { background-image: url('../assets/images/Kette.png'); }
   #bild_8 { background-image: url('../assets/images/Vogel.png'); }
+
+  @include media-breakpoint-down(sm) {
+    #bild_4,
+    #bild_5 {
+      flex: 0 0 100%;
+      height: 45vw;
+    }
+  }
 
 }
 
